@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Etch-a-sketch</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <h1 id="header"></h1>
+            <div class="alignment">
+                <div class="menu">
+                    <div class="innerMenu">
+                        <div class="colours1">
+                            <div id="colour1"></div>
+                            <div id="colour2"></div>
+                            <div id="colour3"></div>
+                        </div>
+                        <div class="colours2">
+                            <div id="colour4"></div>
+                            <div id="colour5"></div>
+                            <div id="colour6"></div>
+                        </div>
+                        <button id="erase"></button>
+                        <button id="clear"></button>
+                    </div>
+                    <div id="sizeMenu">
+                        <p id="size">2 x 2</p>
+                        <input type="range" min="2" max="50" id="slider">
+                    </div>
+                </div>
+                <div id="field"></div>
+            </div>
+        </div>
+    </body>
+</html>
