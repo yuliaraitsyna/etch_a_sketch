@@ -1,0 +1,140 @@
+html, body
+{
+    height:100%;
+    background-color: #C9BBDC;
+}
+.main, .innerMenu, .menu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+.menu{
+    gap:10%;
+}
+#header
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:60px;
+}
+#size
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:18px;
+}
+.alignment
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height:80%;
+    width:100%;
+    gap:10%;
+}
+.innerMenu
+{
+    background-color: #DECFF1;
+    border-radius: 5%;
+    height:250px;
+    width:200px;
+    gap:7%;
+    box-shadow: 2px 2px 3px #ada1bc;
+}
+.colours1, .colours2
+{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap:10%;
+    height:20%;
+    width:80%;
+}
+#colour1, #colour2, #colour3, #colour4, #colour5, #colour6
+{
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    border: 1px;
+    background-color: black;
+    box-shadow: 2px 2px 3px #ada1bc;
+}
+#colour1
+{
+    background-color: #9745FF;
+}
+#colour2
+{
+    background-color: #82A5FF;
+}
+#colour3
+{
+    background-color: #FE7DDA
+}
+#colour4
+{
+    background-color: #94CC86;
+}
+#colour5
+{
+    background-color: #EFE37D;
+}
+#colour6
+{
+    background-color: #000000;
+}
+
+#erase, #clear
+{
+    width:80%;
+    height:15%;
+    background-color: #EBDCFE;
+    border-radius: 10px;
+    border:none;
+    font-size:20px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 2px 2px 3px #ada1bc;
+}
+#field
+{
+    background-color: white;
+    height:500px;
+    width:500px;
+}
+#sizeMenu
+{
+    height: 20%;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #DECFF1;
+    border-radius:10px;
+    box-shadow: 2px 2px 3px #ada1bc;
+}
+#slider
+{
+    -webkit-appearance: none;
+    background-color: #C9BBDC;
+    background-image: linear-gradient(#81778E,  #81778E);
+    border-radius: 10px;
+    height:15px;
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+#slider::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    background-color:#EBDCFE;
+    box-shadow: 2px 2px 10px #81778E;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+}
