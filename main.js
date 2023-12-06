@@ -36,4 +36,57 @@ function removeCells() {
       field.removeChild(field.firstChild);
     }
   }
-  SetUpGrid(2);
+
+SetUpGrid(2);
+
+const COLOURS = {
+    Black: 6,
+    Pink: 3,
+    Yellow: 5,
+    Green: 4,
+    Blue: 2,
+    Purple: 1
+};
+
+const colours = [];
+for (let i = 1; i <= 6; i++) {
+    let colour = document.getElementById("colour" + i);
+    let colourEnum;
+    switch (i) {
+        case 1:
+            colourEnum = 'Purple';
+            break;
+        case 2:
+            colourEnum = 'Blue';
+            break;
+        case 3:
+            colourEnum = 'Pink';
+            break;
+        case 4:
+            colourEnum = 'Green';
+            break;
+        case 5:
+            colourEnum = 'Yellow';
+            break;
+        case 6:
+            colourEnum = 'Black';
+            break;
+        default:
+            colourEnum = 'Black';
+    }
+    colours.push({ HTMLObject: colour, ColourValue: colourEnum });
+}
+
+function ColourChoice(event) {
+    const colourDiv = event.currentTarget;
+    colourDiv.style.border = "solid white 2px";
+    colours.forEach(colour =>{
+        if(colour.HTMLObject !== colourDiv)
+        {
+            colour.HTMLObject.style.border = "none";
+        }
+    });
+}
+colours.forEach(colour => {
+    colour.HTMLObject.addEventListener('click', ColourChoice);
+});
