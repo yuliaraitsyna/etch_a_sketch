@@ -104,8 +104,8 @@ html, body
 #field
 {
     background-color: white;
-    height:500px;
-    width:500px;
+    height:70vmin;
+    width:70vmin;
     display: grid;
 }
 #sizeMenu
